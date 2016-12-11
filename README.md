@@ -1,4 +1,4 @@
 RecipeCalculator
 ================
 
-Recipe Calculator Universal Apps
+Recipe Calculator in Javascript + HTML

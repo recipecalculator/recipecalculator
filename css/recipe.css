@@ -1,0 +1,32 @@
+.navbar-default {
+	background-color: #FFF;
+}
+
+.jumbotron {
+	background-image: url(img/bg.png);
+	background-color: #428BCA;
+	color: #FFF;
+}
+
+.margin-top {
+  margin-top: 1em;
+}
+
+.calculate-line {
+  background-color: #EEE;
+  margin-top: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.no-padding-left {
+  padding-left: 0;
+}
+
+.subtitle {
+  margin-top: 0;
+}
+
+.go-right {
+	float: right;
+}

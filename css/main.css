@@ -1,0 +1,63 @@
+.nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron-home{
+  background-image:url('../img/Ericeira.jpg');
+  height: 600px;
+}
+
+.jumbotron-home .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron-home h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron-home p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.sources {
+    background-color: #efefef;
+    border-bottom: 1px solid #dbdbdb
+}
+
+.sources h2 {
+    color: #393c3d;
+    font-size: 24px;
+}
+
+.sources p{
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+    
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+
