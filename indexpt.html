@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Recipe Calculator</title>
+	<title>Calculadora de Receitas</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/recipe.css">
+
 </head>
 <body>
 	<!-- Fixed navbar -->
@@ -17,12 +18,12 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">Recipe Calculator</a>
+				<a class="navbar-brand" href="indexpt.html">Calculadora de Receitas</a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="index.html">EN</a></li>
-					<li><a href="indexpt.html">PT</a></li>
+					<li><a href="index.html">EN</a></li>
+					<li class="active"><a href="indexpt.html">PT</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -30,8 +31,8 @@
 
 	<div class="jumbotron">
 		<div class="container">
-			<h1> Recipe Calculator</h1>
-			<p>This app will help you calculate the ingredients amount of a recipe, based on the portions of the recipe or by changing the amount of one ingredient.</p>
+			<h1>Calculadora de Receitas</h1>
+			<p>Esta aplica&ccedil;&atilde;o vai ajudar a calcular a quantidade dos ingredientes de uma receita, com base nas por&ccedil;&otilde;es da receita ou ao alterar a quantidade de determinado ingrediente.</p>
 		</div>
 	</div>
 
@@ -39,20 +40,20 @@
 
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
-				<h3 class="subtitle">Start by inserting your ingredient list here</h3>
-				<textarea class="form-control" id="originalRecipe" name="originalRecipe" rows="5" required placeholder="Insert Your Ingredient list here!"></textarea>
+				<h3 class="subtitle">Para come&ccedil;ar, insira aqui a lista de ingredientes</h3>
+				<textarea class="form-control" id="originalRecipe" name="originalRecipe" rows="5" required placeholder="Insira aqui a lista de ingredientes!"></textarea>
 			</div>
 		</div>
 
 		<div class="row margin-top">
 			<div class="col-md-6 col-md-offset-3">
-				<h3 class="subtitle">How do you want to calculate?</h3>
+				<h3 class="subtitle">Como deseja calcular?</h3>
 				<div class="btn-group btn-group-justified" role="group" aria-label="Test">
 					<div class="btn-group" role="group">
-    					<button type="button" class="btn btn-default" id="portionsButton" onclick="byPortions()">By Portions</button>
+    					<button type="button" class="btn btn-default" id="portionsButton" onclick="byPortions()">Por por&ccedil;&otilde;es</button>
   					</div>
 					<div class="btn-group" role="group">
-    					<button type="button" class="btn btn-default" id="amountButton" onclick="byAmount()">By Amount</button>
+    					<button type="button" class="btn btn-default" id="amountButton" onclick="byAmount()">Por quantidade</button>
   					</div>
 				</div>
 			</div>
@@ -60,22 +61,22 @@
 
 		<div class="row hidden margin-top" id="portionsDiv">
 			<div class="col-md-6 col-md-offset-3">
-				<h3 class="subtitle">Insert the portions</h3>
+				<h3 class="subtitle">Insira as por&ccedil;&otilde;es</h3>
 			</div>
 				<div class="col-md-3 col-xs-6 col-md-offset-3">
-					<input type="number" class="form-control" id="originalPortions" placeholder="Recipe Original Portions">
+					<input type="number" class="form-control" id="originalPortions" placeholder="Por&ccedil;&otilde;es da receita original">
 				</div>
 				<div class="col-md-3 col-xs-6">
-					<input type="number" class="form-control" id="newPortions" placeholder="New Portions">
+					<input type="number" class="form-control" id="newPortions" placeholder="Por&ccedil;&otilde;es desejadas">
 				</div>
 			</div>
 		
 		<div class="row hidden margin-top" id="amountDiv">
 			<div class="col-md-6 col-md-offset-3">
-				<h3 class="subtitle">Insert the new Amount</h3>
+				<h3 class="subtitle">Insira a nova quantidade</h3>
 			</div>
 			<div class="col-md-3 col-xs-6 col-md-offset-3">
-				<input type="number" class="form-control" id="newAmount" placeholder="New Amount">
+				<input type="number" class="form-control" id="newAmount" placeholder="Nova quantidade">
 			</div>
 			<div class="col-md-3 col-xs-6">
 				<select class="form-control" id="ingredientsDropdown"></select>
@@ -84,13 +85,13 @@
 
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3 text-right calculate-line hidden" id="calculateLine">
-				<button class="btn btn-primary col-md-2 col-xs-12 go-right" onclick="execute()">Calculate</button>
+				<button class="btn btn-primary col-md-2 col-xs-12 go-right" onclick="execute()">Calcular!</button>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3 hidden" id="resultDiv">
-				<h3>New Ingredient List</h3>
+				<h3>Nova lista de ingredientes</h3>
 				<ul class="list-group" id="result"></ul>
 			</div>
 		</div>
